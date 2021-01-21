@@ -5,5 +5,125 @@
         "label": "Flow 1",
         "disabled": false,
         "info": ""
+    },
+    {
+        "id": "66e96319.25ac0c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "{$MQTT_BROKER_HOST}",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "d91447c4.85f998",
+        "type": "websocket-client",
+        "path": "{$WS_PATH}",
+        "tls": "",
+        "wholemsg": "false"
+    },
+    {
+        "id": "3d13030f.5ebfec",
+        "type": "mqtt in",
+        "z": "3af82246.3634ae",
+        "name": "",
+        "topic": "{$MQTT_SUBSRCIBE_TOPIC}",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "66e96319.25ac0c",
+        "x": 210,
+        "y": 120,
+        "wires": [
+            [
+                "9609fcfc.9699e",
+                "105b8e.e40c8472"
+            ]
+        ]
+    },
+    {
+        "id": "9609fcfc.9699e",
+        "type": "websocket out",
+        "z": "3af82246.3634ae",
+        "name": "",
+        "server": "",
+        "client": "d91447c4.85f998",
+        "x": 570,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "acca21cf.335df",
+        "type": "mqtt out",
+        "z": "3af82246.3634ae",
+        "name": "",
+        "topic": "MQTT_PUBLISH_TOPIC",
+        "qos": "",
+        "retain": "",
+        "broker": "66e96319.25ac0c",
+        "x": 570,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "d1abc95a.65d828",
+        "type": "websocket in",
+        "z": "3af82246.3634ae",
+        "name": "",
+        "server": "",
+        "client": "d91447c4.85f998",
+        "x": 240,
+        "y": 220,
+        "wires": [
+            [
+                "acca21cf.335df",
+                "ed2e11ec.67788"
+            ]
+        ]
+    },
+    {
+        "id": "105b8e.e40c8472",
+        "type": "debug",
+        "z": "3af82246.3634ae",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ed2e11ec.67788",
+        "type": "debug",
+        "z": "3af82246.3634ae",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 260,
+        "wires": []
     }
 ]
