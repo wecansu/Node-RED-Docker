@@ -43,8 +43,8 @@
         "qos": "2",
         "datatype": "auto",
         "broker": "66e96319.25ac0c",
-        "x": 210,
-        "y": 120,
+        "x": 250,
+        "y": 60,
         "wires": [
             [
                 "9609fcfc.9699e",
@@ -59,8 +59,8 @@
         "name": "",
         "server": "",
         "client": "d91447c4.85f998",
-        "x": 570,
-        "y": 120,
+        "x": 610,
+        "y": 60,
         "wires": []
     },
     {
@@ -72,8 +72,8 @@
         "qos": "",
         "retain": "",
         "broker": "66e96319.25ac0c",
-        "x": 570,
-        "y": 220,
+        "x": 610,
+        "y": 160,
         "wires": []
     },
     {
@@ -83,8 +83,8 @@
         "name": "",
         "server": "",
         "client": "d91447c4.85f998",
-        "x": 240,
-        "y": 220,
+        "x": 280,
+        "y": 160,
         "wires": [
             [
                 "acca21cf.335df",
@@ -105,8 +105,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 530,
-        "y": 160,
+        "x": 570,
+        "y": 100,
         "wires": []
     },
     {
@@ -122,8 +122,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
-        "y": 260,
+        "x": 550,
+        "y": 200,
         "wires": []
     }
 ]
